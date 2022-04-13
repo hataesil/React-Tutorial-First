@@ -1,0 +1,539 @@
+<!--헤더시작-->
+<!DOCTYPE html>
+<html lang="ko"> <!-- 문서에 text가 있을경우 한글로 해석하도록 정보제공 -->
+<head>
+    <meta charset="UTF-8"> <!--html5에서 한국화일 처리-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no"><!--모든 기기에서 화면의 크기에 따라 보이게 처리-->
+    <meta name="naver-site-verification" content="f8a29a301ddf3c519cf01442891ab52a31d91476"/>
+    <title>라마다 서귀포 호텔</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mediascreen.css">
+    <link rel="stylesheet" href="../js/bxslider-4-master/dist/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="../js/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery.menu.js?ver="></script>
+    <script src="../js/placeholders.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script defer type="text/javascript" src="../js/bxslider-4-master/dist/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <!-- 180206 UI/UX 개선 RedTieButler 서비스 추가 시작 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/sockjs/1.1.1/sockjs.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://concierge.redtiebutler.com/hotel/css/concierge_new.css">
+    <script type="text/javascript"
+            src="https://concierge.redtiebutler.com/hotel/js/concierge_ramadasgp_new.js"></script>
+    <!-- 180206 UI/UX 개선 RedTieButler 서비스 추가 끝 -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102644904-20"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102644904-20');
+    </script>
+
+    <!--네이버 analytics-->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "8ccfb02c3d61f0";
+        wcs_do();
+    </script>
+</head>
+<body>
+<!--헤더 끝-->
+<!-- pop -->
+<!-- 20180205 팝업 소스 수정 -->
+<style>
+    .pops { position: absolute; z-index: 98; font-size: 0; width: 400px; top: 150px; }
+    .pops img{ width: 100%;}
+    .pops .bannerBottom { display: inline-block; font-size: 12px; background-color: #eee; width: 100%; padding: 5px; }
+    .pops .bannerBottom:after { display: block; content: ''; clear: both; }
+    .pops .bannerBottom label { display: block; float: right; margin-top: 1px; line-height: 1.5em }
+    .pops.pop_0 { left: 10%; }
+    .pops.pop_1 { left: 32%; }
+    .pops.pop_2 { left: 50%; }
+    .pops.pop_3 { left: 70%; }
+
+    .pops {display: none;}
+
+    @media screen and (max-width: 767px) {
+        .pops { display: none }
+        .pops.pop_1 { display: block}
+        .pops.pop_1 { width: 80%; top: 10%; left: 0; margin-left: 10%; }
+        .pops.pop_1 img { width:100%;}
+    }
+</style>
+
+<script>
+    function hidepop(pn) {
+        var hide24h = $(".hide_24hour").is(":checked");  //t or f
+
+        if (hide24h) {
+            $.cookie(pn, hide24h, {expires: 1});
+        }
+        var closePop = document.getElementById(pn);
+        $(closePop).fadeOut("fast");
+    }
+
+</script>
+        <div id="pop_" class="pops pop_0">
+            <img src="/img/popup/pop_.png"/>
+            <div class="bannerBottom">
+		<span style="float:left;"><input type="checkbox" name="hide_24hour" class="hide_24hour"
+                                         id="hide_24hourpop_"/>
+			<label for="hide_24hourpop_">하루동안 보지 않기</label>
+		</span>
+                <span style="float:right;"><a href="javascript:hidepop('pop_')">닫기</a></span>
+            </div>
+        </div>
+        <!-- pop -->
+
+<ul class="skipmenu">
+    <li><a href="#">메인메뉴바로가기</a></li>
+    <li><a href="#">본문바로가기</a></li>
+    <li><a href="#">푸터바로가기</a></li>
+</ul>
+
+<div id="m_menu" class="navi">
+    <ul>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">ACCOMMODATION</a></li>
+        <li><a href="#">FACILITIES</a></li>
+        <li><a target="_blank" href="https://codybooking.com/H0062/booking.html">RESERVATION</a></li>
+<!--        <li><a target="_blank" href="https://booking.naver.com/booking/3/bizes/177824/search?area=ple">RESERVATION</a></li>-->
+    </ul>
+</div>
+
+<div id="header_wrap">
+    <header class="main_header">
+        <h1><a href="#"><img src="img/logo_160100.jpg" alt="호텔"></a></h1>
+        <p id="menu_icon"><img src="img/menu_icon.png" alt="메뉴 아이콘"></p>
+        <ul id="language" class="navi">
+            <li><a href="#">KR</a></li>
+            <li><a href="javascript:alert('준비중입니다.');">EN</a></li>
+        </ul>
+        <nav class="navi">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ACCOMMODATION</a></li>
+                <li><a href="#">FACILITIES</a></li>
+                <li><a target="_blank" href="https://codybooking.com/H0062/booking.html">RESERVATION</a></li>
+                <!--                <li><a target="_blank" href="https://booking.naver.com/booking/3/bizes/177824/search?area=ple">RESERVATION</a></li>-->
+            </ul>
+        </nav>
+        <p id="weather" class="navi"></p>
+    </header>
+</div>
+<div class="clearfix"></div>
+
+<div id="visual_wrap">
+    <div id="visual_img">
+        <ul class="bxslider_01">
+            <li><img src="img/main_visual_00.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div id="visual_img_m">
+        <ul class="bxslider_05">
+            <li><img src="img/m_visual_00.png" alt=""></li>
+        </ul>
+    </div>
+    <div id="visual_txt">
+        <p id="txt01">WELCOME TO THE</p>
+        <p id="txt02">RAMADA JEJU SEOGWIPO HOTEL<br>FOR YOUR BEST PLEASURE
+        </p>
+    </div>
+</div>
+
+<div id="contents_wrap">
+    <div id="about">
+        <div class="middle">
+            <div id="about_left">
+                <div id="about_txt">
+                    <h2 class="title">ABOUT</h2>
+                    <p class="about01 text">라마다 제주 서귀포 호텔에 오신 것을 환영합니다.<br>
+                    </p>
+                </div>
+            </div>
+            <div id="about_right">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="accommodation">
+        <div class="middle">
+            <h2 class="title">ACCOMMODATION</h2>
+            <p class="text h2_info">언제 어느때나 편안하고 아늑하게, 최고의 안식처를 제공합니다.</p>
+            <ul id="room_list">
+
+
+                <li><h3 class="sub_title">Superior / Deluxe Family Twin</h3>
+                    <div class="room_info">
+                        <div class="list_800">
+                            <ul class="bxslider_02">
+                                <li><img src="img/DeluxeFamliyTwin_1.jpg" alt=""></li>
+                                <li><img src="img/DeluxeFamliyTwin_2.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <p class="room_02"><span class="text_big txt00">BED TYPE</span><span class="txt01">1 Double Size + 1 Single Size Bed</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">ROOM SIZE</span><span class="txt01">27.6㎡</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">FLOOR</span><span class="txt01">Superior Family Twin : 2 - 4F</span>
+                        <p class="room_03"><span class="text_big txt00"> </span><span class="txt01">Deluxe Family Twin : 5 - 9F</span>
+                        </p>
+                        <p class="room_04"><span class="text_big gold txt00">CHECK IN</span><span class="gold txt01">15:00</span>
+                        </p>
+                        <p class="room_05"><span class="text_big gold txt00">CHECK OUT</span><span class="gold txt01">11:00</span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p class="detail_view text"><a href="acc.php?acc=1">DETAIL VIEW</a></p>
+
+                    </div>
+                </li>
+
+
+                <li><h3 class="sub_title">Superior / Deluxe Twin</h3>
+                    <div class="room_info">
+                        <div class="list_800">
+                            <ul class="bxslider_02">
+                                <li><img src="img/DeluxeTwin_1.jpg" alt=""></li>
+                            </ul>
+                        </div>
+
+                        <p class="room_02"><span class="text_big txt00">BED TYPE</span><span class="txt01">2 Single Size Bed</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">ROOM SIZE</span><span class="txt01">27.6㎡</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">FLOOR</span><span class="txt01">Superior Family Twin : 2 - 4F</span>
+                        <p class="room_03"><span class="text_big txt00"> </span><span class="txt01">Deluxe Family Twin : 5 - 9F</span>
+                        <p class="room_04"><span class="text_big gold txt00">CHECK IN</span><span class="gold txt01">15:00</span>
+                        </p>
+                        <p class="room_05"><span class="text_big gold txt00">CHECK OUT</span><span class="gold txt01">11:00</span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p class="detail_view text"><a href="acc.php?acc=2">DETAIL VIEW</a></p>
+                    </div>
+                </li>
+                <li><h3 class="sub_title">Deluxe Double</h3>
+                    <div class="room_info">
+                        <div class="list_800">
+                            <ul class="bxslider_02">
+                                <li><img src="img/Deluxe_1.jpg" alt=""></li>
+                                <li><img src="img/Deluxe_2.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <p class="room_02"><span class="text_big txt00">BED TYPE</span><span class="txt01">1 Double Size Bed</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">ROOM SIZE</span><span class="txt01">27.6㎡</span>
+                        </p>
+                        <p class="room_04"><span class="text_big gold txt00">CHECK IN</span><span class="gold txt01">15:00</span>
+                        </p>
+                        <p class="room_05"><span class="text_big gold txt00">CHECK OUT</span><span class="gold txt01">11:00</span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p class="detail_view text"><a href="acc.php?acc=3">DETAIL VIEW</a></p>
+                    </div>
+                </li>
+                <li><h3 class="sub_title">Corner Suite</h3>
+                    <div class="room_info">
+                        <div class="list_800">
+                            <ul class="bxslider_02">
+                                <li><img src="img/CornerSuite_1.jpg" alt=""></li>
+                                <!--<li><img src="img/CornerSuite_2.jpg" alt=""></li>
+                                <li><img src="img/CornerSuite_3.jpg" alt=""></li>-->
+                            </ul>
+                        </div>
+                        <p class="room_02"><span class="text_big txt00">BED TYPE</span><span class="txt01">1 Double Size + 1 Single Size Bed</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">ROOM SIZE</span><span class="txt01">40.1㎡</span>
+                        </p>
+                        <p class="room_04"><span class="text_big gold txt00">CHECK IN</span><span class="gold txt01">15:00</span>
+                        </p>
+                        <p class="room_05"><span class="text_big gold txt00">CHECK OUT</span><span class="gold txt01">11:00</span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p class="detail_view text"><a href="acc.php?acc=4">DETAIL VIEW</a></p>
+                    </div>
+                </li>
+
+                <li><h3 class="sub_title">Executive Suite</h3>
+                    <div class="room_info">
+                        <div class="list_800">
+                            <ul class="bxslider_02">
+                                <li><img src="img/ExecutiveSuite_1.jpg" alt=""></li>
+                                <li><img src="img/ExecutiveSuite_2.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <p class="room_02"><span class="text_big txt00">BED TYPE</span><span class="txt01">1 Queen Size Bed</span>
+                        </p>
+                        <p class="room_03"><span class="text_big txt00">ROOM SIZE</span><span class="txt01">40.1㎡</span>
+                        </p>
+                        <p class="room_04"><span class="text_big gold txt00">CHECK IN</span><span class="gold txt01">15:00</span>
+                        </p>
+                        <p class="room_05"><span class="text_big gold txt00">CHECK OUT</span><span class="gold txt01">11:00</span>
+                        </p>
+                        <div class="clearfix"></div>
+                        <p class="detail_view text"><a href="acc.php?acc=5">DETAIL VIEW</a></p>
+                    </div>
+                </li>
+
+            </ul>
+            <div id="room_right">
+                <div class="room_view">
+                    <ul class="bxslider_03">
+                        <li><img src="img/DeluxeFamliyTwin_1.jpg" alt=""></li>
+                        <li><img src="img/DeluxeFamliyTwin_2.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="room_view">
+                    <ul class="bxslider_03">
+                        <li><img src="img/DeluxeTwin_1.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="room_view">
+                    <ul class="bxslider_03">
+                        <li><img src="img/Deluxe_1.jpg" alt=""></li>
+                        <li><img src="img/Deluxe_2.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="room_view">
+                    <ul class="bxslider_03">
+                        <li><img src="img/CornerSuite_1.jpg" alt=""></li>
+                        <!--<li><img src="img/CornerSuite_2.jpg" alt=""></li>
+                        <li><img src="img/CornerSuite_3.jpg" alt=""></li>-->
+                    </ul>
+                </div>
+                <div class="room_view">
+                    <ul class="bxslider_03">
+                        <li><img src="img/ExecutiveSuite_1.jpg" alt=""></li>
+                        <li><img src="img/ExecutiveSuite_2.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="view_list">
+            <span id="del_btn2"><img src="img/del_btn.png" alt="닫기 버튼"></span>
+        </div>
+    </div>
+
+    <div id="facilities">
+        <div class="middle">
+            <h2 class="title">FACILITIES</h2>
+            <p class="h2_info text">여가생활을 호텔안에서 모두 이룰 수 있게, 준비했습니다.</p>
+            <div id="facilities_list">
+                <ul class="bxslider_04">
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">한라산이 보이는 루프탑 수영장에서 <br> 아름다운 제주 바다 전망도 감상하실 수 있습니다. </p>
+                            <p class="f_03"><span class="r_title bold">이용시간</span><span
+                                        class="bold">16시~23시</span></p>
+                            <p class="f_04"><span class="r_title bold word_space_2">&nbsp;&nbsp;</span><span class="bold">* 투숙객 무료</span></p>
+                            <p class="f_04"><span class="r_title bold word_space_2">&nbsp;&nbsp;</span><span class="bold">* 튜브 및 선베드 대여 (무료)</span></p>
+                            <!--                            <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Swimming Pool</p>
+                        <img src="img/fac_swimmingpool.png" alt="" title="Swimming Pool">
+                    </li>
+
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">라마다 서귀포의 낭만적인 루프탑에서<br>야경을 즐겨보세요.
+                            </p>
+                            <div class="f_03"><span class="r_title bold word_space_2">시 간:</span><span
+                                        class="bold">(5월~10월 이벤트) 16시~24시</span></div>
+                            <div class="f_04"><span class="r_title bold word_space_2">장 소:</span><span
+                                        class="bold">라마다 제주 서귀포호텔 10F 루프탑 (우천시 1F 로리앙 레스토랑)</span></div>
+                            <div class="f_04"><span class="r_title bold">이벤트내용:</span><span
+                                        class="bold">루프탑 PKG 객실 구매 시 생맥주, 버켓칵테일 무제한</span></div>
+                            <div class="f_04"><span class="r_title bold">메뉴(유료):</span><span
+                                        class="bold">프라이드 치킨 (18,000원) / 칠리치즈감자튀김 (10,000원) / 기본안주 (5,000원)</span></div>
+                            <!-- <p class="f_04"><span class="r_title bold word_space_2">  </span><span class="bold">디너 18:00~22:00 (사전예약)</span></p>-->
+                            <!-- <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Roof Top</p>
+                        <img src="img/fac_rooftop.png" alt="" title="Roof Top">
+                    </li>
+
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">라마다 서귀포의 고급 뷔페는 신선함 가득한<br> 최고의 식재료를 이용한 건강한 요리를 즐길 수 있습니다.
+                            </p>
+                            <p class="f_03"><span class="r_title bold word_space_2">위 치</span><span
+                                        class="bold">1층</span></p>
+                            <p class="f_04"><span class="r_title bold">운영시간</span><span
+                                        class="bold">조식 07:00~10:00</span></p>
+                            <!--							<p class="f_04"><span class="r_title bold word_space_2">  </span><span class="bold">디너 18:00~22:00 (사전예약)</span></p>-->
+                            <!--							<span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Lorient </p>
+                        <img src="img/fac_restaurant.png" alt="" title="Restaurant">
+                    </li>
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">칵테일, 와인, 비어 간단한 스낵류 <br><br>호텔 고층에 위치한 VIP 전용 라운지로 럭셔리하고 격조높은 EFL & Bar 입니다.<br>
+                                서귀포 해변을 바라보며 최상의 전망에서 즐길 수 있는 격이 다른 특별한 추억을 선사합니다.
+                            </p>
+                            <p class="f_03"><span class="r_title bold word_space_2">위 치</span><span
+                                        class="bold">9층</span></p>
+                            <p class="f_04"><span class="r_title bold">운영시간</span><span class="bold">10:00~12:00 / 18:00~22:00</span></p>
+<!--                            <p class="f_04"><span class="r_title bold word_space_2">  </span><span class="bold">18:00~22:00 </span></p>-->
+<!--                            <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Ramada Club Lounge</p>
+                        <img src="img/fac_ClubLounge_1.png" alt="" title="Club lounge">
+                    </li>
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">세미나, 소규모 미팅등에 최적화되어 있습니다.
+                            </p>
+                            <p class="f_03"><span class="r_title bold word_space_2">위 치</span><span
+                                        class="bold">10층</span></p>
+                            <p class="f_04"><span class="r_title bold">운영시간</span><span class="bold">예약제 운영</span></p>
+<!--                            <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Judith</p>
+                        <img src="img/fac_judith.png" alt="" title="Convent">
+                    </li>
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">
+                                특급호텔 사우나의 고급스러운 분위기와 시설, 해변을 바라보며 즐기는 최적의 장소로<br>
+                                일상의 스트레스에서 벗어나 몸과 마음을 건강히 균형있게 가꿀 수 있는 여유를 선사합니다.
+                            </p>
+                            <p class="f_03"><span class="r_title bold word_space_2">위 치</span><span
+                                        class="bold">10층</span></p>
+                            <p class="f_04"><span class="r_title bold">운영시간</span><span class="bold">06:00~12:00 / 14:00~21:00</span>
+                            </p>
+<!--                            <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Viento</p>
+                        <img src="img/fac_viento.png" alt="" title="Sauna">
+                    </li>
+                    <li>
+                        <div class="over_txt">
+                            <p class="f_02">근력운동, 유산소운동의 시스템을 갖추었으며,<br>
+                                차분하고 안락한 공간에서 건강을 증진하고 고품격 휴식을 경험하세요.
+                            </p>
+                            <p class="f_03"><span class="r_title bold word_space_2">위치</span><span
+                                        class="bold">10층</span></p>
+                            <p class="f_04"><span class="r_title bold">운영시간</span><span class="bold">08:00~20:30</span>
+                            </p>
+<!--                            <span class="bold text more_btn">VIEW MORE</span>-->
+                        </div>
+                        <p class="top_txt">Fitness</p>
+                        <img src="img/fac_fitness.png" alt="" title="Fitness center">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="location">
+        <div id="location_top">
+            <h2 class="title">LOCATION</h2>
+            <p class="text h2_info">제주도 서귀포시 강정동 173-3</p>
+            <ul>
+                <li><span class="loca_icon"><img src="img/phone.png" alt=""></span>070-5227-2000</li>
+                <li><span class="loca_icon"><img src="img/fax.png" alt=""></span>064-729-8003</li>
+                <li><span class="loca_icon"><img src="img/train.png" alt=""></span>공항버스 800 ,800-1</li>
+            </ul>
+        </div>
+        <div id="map_wrap">
+            <div id="map-canvas" style="width: 100%; height: 100%"></div>
+        </div>
+    </div>
+
+
+    </div>
+<!-- } 콘텐츠 끝 -->
+</div>
+<div class="gap_sec"></div>
+<div class="clearfix"></div>
+
+<footer>
+    <div class="ft_wrap">
+        <div class="ft_cont">
+            <div class="ft_left">
+                <a href="./index.php"><img src="img/Ramada_Logo_White.svg" alt="홈으로"></a>
+            </div>
+            <div class="ft_right">
+                <div class="copy">
+                    <a href="#" target="_blank" title="새창으로 열기">
+                        <span>&copy; 2017.Seogwipo RAMADA. all rights reserved. Powered by RedTie Inc.</span>
+                    </a>
+                </div>
+                <div class="addr">
+                    <img src="img/phone.png" alt=""><span>070-5227-2000</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="clearfix"></div>
+
+<button type="button" id="top_btn"><i class="fa fa-chevron-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+    <script>
+
+    $(function() {
+        $("#top_btn").on("click", function() {
+            $("html, body").animate({scrollTop:0}, '500');
+            return false;
+        });
+    });
+    </script>
+
+
+<script>
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdtXfXt-ZCUTs7Svpx4Sabnt2hXZg0TeA&callback=initialize" type="text/javascript"></script>
+
+<script>
+    function initialize() {
+        var mapLocation = new google.maps.LatLng('33.252503', '126.507641'); // 지도에서 가운데로 위치할 위도와 경도
+        var markLocation = new google.maps.LatLng('33.252503', '126.507641'); // 마커가 위치할 위도와 경도
+
+        var mapOptions = {
+            center: mapLocation,
+            zoom: 18,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),  mapOptions);
+
+        var image = {
+            url: '/img/marker.png',
+            scaledSize : new google.maps.Size(50, 63)
+        };
+
+        var marker;
+        marker = new google.maps.Marker({
+            position: markLocation,
+            map: map,
+            icon: image,
+            title: '라마다 서귀포 호텔'
+        });
+
+        var content = "라마다 서귀포 호텔입니다 <br/>반갑습니다.";
+        var infowindow = new google.maps.InfoWindow({
+            content: content
+        });
+
+        google.maps.event.addListener(marker, "click", function() {
+            infowindow.open(map, marker);
+        });
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    }
+</script>
+</body>
+</html>

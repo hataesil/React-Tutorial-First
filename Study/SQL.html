@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <head>
+    <title>SQL 언어 요약</title>
+    <style>
+      h1 {
+        color: blue; text-align: center
+      }
+      h2 {
+        color: red
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>SQL Language</h1>
+
+    </header>
+    <hr />
+    <nav>
+      <h3><p style="text-align:center">
+        [Intro]&nbsp;&nbsp;[Syntax]&nbsp;&nbsp;[References]&nbsp;&nbsp;[Exam]&nbsp;
+        <a href="./prom.html">[Program Home]</a>
+      </p></h3>
+
+    <hr />
+    <section>
+      <h2>Intro</h2>
+        <ol>
+          <li>
+            <p>
+            mysql>\mqsql\bin\mysql -uroot -p<br />
+            mysql> passward 1*****
+            </p>
+          <li>
+            <p>
+              mysql>use opentutorials;<br />
+              mysql>show tables;<br />
+              mysql>create table topic(<br />
+                  - id int(11) not null auto_increment,<br />
+                  - title varchar(100_ not null,<br />
+                  - des....................,<br />
+                  - primary key(id)<br />
+                  - );<br />
+            </p>
+            <li>
+              <p>
+              mysql>desc topic <br />
+              mysql>insert into topic(title,description,authur,profile) <br />
+                    - values('My SQL','My SQL is ...','tobin','developer');<br />
+              mysql>select * from topic;<br />
+              </p>
+          </li>
+
+          </li>
+
+        </ol>
+    </section>
+    <section>
+      <h2>Syntax</h2>
+      <ol>
+        <h3><li>기본형태</li></h3>
+        <ol>
+          <li>  SELECT * FROM Customers;</li>
+          <li>
+            SELECT Column1, column2,...
+            FROM table_name;
+          </li>
+        </ol>
+
+        <h3><li>주요 SQL 명령문</li></h3>
+        <ul>
+          <li>SELECT - extracts data from a database 데이터베이스에서 데이터를 추출</li>
+          <li>UPDATE - updates data in a database 데이터베이스의 데이터를 업데이트</li>
+          <li>DELETE - deletes data from a database 데이터베이스에서 데이터를 삭제</li>
+          <li>INSERT INTO - inserts new data into a database 데이터베이스에 새 데이터를 삽입</li>
+          <li>CREATE DATABASE - creates a new database 새 데이터베이스를 만듬.</li>
+          <li>ALTER DATABASE - modifies a database 데이터베이스를 수정</li>
+          <li>CREATE TABLE - creates a new table 새 테이블을 만듬</li>
+          <li>ALTER TABLE - modifies a table 테이블 수정</li>
+          <li>DROP TABLE - deletes a table 테이블을 삭제</li>
+          <li>CREATE INDEX - creates an index (search key)색인 (검색 키) 작성</li>
+          <li>DROP INDEX - deletes an index 색인을 삭제</li>
+        </ul>
+      </ol>
+    </section>
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>
+          SELECT DISTINCT column1, column2, ...
+          FROM table_name;<br />
+          SELECT DISTINCT 문은 구별되는 (다른) 값만 리턴하는 데 사용됨(중복값제외)
+        </li>
+        <li>
+          SELECT column1, column2, ...
+          FROM table_name
+          WHERE condition;<br />
+          WHERE 절은 레코드를 필터링하는 데 사용됨
+          WHERE 절은 지정된 조건을 충족하는 레코드 만 추출하는 데 사용됨
+        </li>
+        <li>
+          SELECT column1, column2, ...
+          FROM table_name
+          WHERE condition1 AND condition2 AND condition3 ...;<br />
+          WHERE 절은 AND, OR 및 NOT 연산자와 결합 될 수 있음
+          AND 및 OR 연산자는 둘 이상의 조건을 기반으로 레코드를 필터링하는 데 사용
+          조건이 참이 아닌 경우 NOT 연산자는 레코드를 표시
+        </li>
+        <li>
+          SELECT column1, column2, ...
+          FROM table_name
+          ORDER BY column1, column2, ... ASC|DESC;<br />
+          ORDER BY 키워드는 결과 집합을 오름차순 또는 내림차순으로 정렬하는 데 사용
+          ORDER BY는 기본적으로 오름차순으로 정렬. 내림차순으로 정렬하려면 DESC 사용
+        </li>
+      </ul>
+
+    </section>
+    <section>
+      <h2>Exam</h2>
+
+    </section>
+    <hr />
+    <footer>
+      <h4>Edit by Tobin</h4>
+    </footer>
+  </body>
